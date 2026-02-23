@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+
+//1. Create Array using Literal
+// Creating an Empty Array
+let a = [];
+console.log(a);
+
+// Creating an Array and Initializing with Values
+let b = [10, 20, 30];
+console.log(b);
+
+
+
+//2. Create using new Keyword (Constructor)
+
+// Creating and Initializing an array with values
+let arr = new Array(10, 20, 30);
+
+console.log(arr);
+
+
+//operation
+//1. Accessing Elements of an Array
+
+// Creating an Array and Initializing with Values
+let array = ["HTML", "CSS", "JS"];
+
+// Accessing Array Elements
+console.log(array[0]);
+console.log(array[1]);
+
+let fst = array[0];
+console.log("First Item: ", fst);
+
+let lst = array[array.length - 1];
+console.log("lastItem: ", lst);
+
+array[1]= "Bootstrap";
+console.log(array);
+
+array.push("Node.js");//add at end
+array.unshift("web development");//add at begining
+
+// Removes and returns the last element
+let last = array.pop();
+console.log("After Removing the last: " + array);
+
+// Removes and returns the first element
+let first = array.shift();
+console.log("After Removing the First: " + array);
+
+
+// Removes 2 elements starting from index 1
+array.splice(1, 2);
+console.log("After Removing 2 elements starting from index 1: " + array);
+
+
+let len = array.length;
+
+array.length = 7;// increse the array length
+
+array.length = 2; // decrease the array length
+
+
+
+// Iterating through for loop
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i])
+}
+
+
+let a1 = ["HTML", "CSS", "JS", "React"];
+let b1 = ["Node.js", "Expess.js"];
+let concateArray = a1.concat(b1);
+console.log("Concatenated Array: ", concateArray);
+
+
+
+console.log(a1.toString());//convert array to string
+
+console.log(typeof a1);//check the type
+
+
+    </script>
+</body>
+</html>
