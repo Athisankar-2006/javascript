@@ -15,7 +15,47 @@
         //Abstraction is one of the key features of object-oriented programming in JavaScript. 
         // It means showing only the essential information and hiding unnecessary details from the user.
 
+
+
+
+        class user{
+
+            static numberofuser=0;
+            constructor(name, age){
+                this.name=name;
+                this.age=age;
+                user.numberofuser++;
+            }
+
+            login(){
+                console.log("haii",this.name);
+                
+            }
+            logout(){
+                console.log("bye",this.name);
+            }
+            static totaluser(){
+                console.log(user.numberofuser);
+            }
+        }
+
+        let user1=new user("aathi", 12);
+        user1.login();
+        user1.logout();
+        let user2=new user("Aathisankar", 21);
+        user2.login();
+        user2.logout();
+          let user3=new user("spiderman", 22);
+        user3.login();
+        user3.logout();
+          let user4=new user("batman", 23);
+        user4.login();
+        user4.logout();
         
+
+
+
+        user.totaluser();
     </script>
 </body>
 </html>
